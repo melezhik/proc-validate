@@ -14,3 +14,8 @@ else
   echo pid file does not exist
   exit 1
 fi
+
+echo -n pid:; cat $pid_file
+
+echo -n 'process footprint: '
+ps ho pid,cmd,etime -p `cat $pid_file`

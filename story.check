@@ -1,2 +1,12 @@
 regexp: pid_file - \S+
 pid file exists
+regexp: pid:\d+
+
+within: process footprint:
+generator: <<CODE
+!bash
+  footprint=$(config footprint)
+  echo 'regexp:' "${footprint}"
+
+CODE
+
