@@ -1,0 +1,2 @@
+regexp: pid_file - \S+
+pid file exists
