@@ -25,7 +25,7 @@ Check if process set by PID taken from pid file exists.
     use Sparrowdo;
     
     task_run  %(
-      task => 'check my process,
+      task => 'check my process',
       plugin => 'proc-validate',
       parameters => %(
         pid_file => '/var/run/foo.pid'
