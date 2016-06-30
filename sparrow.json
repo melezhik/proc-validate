@@ -1,5 +1,5 @@
 {
-  "name" : "proc-validate",
+  "name" : "Simple Linux/UNIX process validator",
   "version" : "0.0.1"
   "description" : "linux process validator"
 }
