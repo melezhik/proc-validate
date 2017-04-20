@@ -17,7 +17,7 @@ if test "${pid_file}"; then
     echo pid file $pid_file does not exist
   fi
 else
-  ps ho pid,cmd,etime
+    ps xaho pid,cmd,etime
 fi
 
 
